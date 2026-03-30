@@ -32,7 +32,7 @@ return (
             {links}
       </ul>
     </div>
-    <h1 className=' font-black text-3xl text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6]  to-[#9514FA]'>DigiTools</h1>
+    <h1 className=' font-extrabold text-3xl text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6]  to-[#9514FA]'>DigiTools</h1>
   </div>
 
   <div className="navbar-center hidden lg:flex">
