@@ -4,7 +4,7 @@ import { RiMenu2Line} from "react-icons/ri";
 import { FiShoppingCart } from "react-icons/fi";
 
 
-const Navbar = () => {
+const Navbar = ({selectedCarts}) => {
 
 const navData = use(navPromise);
 const links = navData.map(navItem => {
@@ -47,7 +47,18 @@ return (
 
   <div className="navbar-end flex items-center gap-2 md:gap-4">
 
-    <button><FiShoppingCart className='size-6' /></button>
+
+     <button className='flex justify-between'>
+      <FiShoppingCart className='size-6 z-10' /> 
+
+      {
+        selectedCarts.length >0&&
+         <div className='bg-red-500 size-5 rounded-full text-white flex items-center justify-center text-xs relative right-1 -top-2'>
+            {selectedCarts.length}
+        </div>
+      }
+      </button>
+
 
     <button className='font-semibold'>Login</button>
     <button

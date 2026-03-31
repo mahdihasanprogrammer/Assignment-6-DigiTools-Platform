@@ -1,12 +1,14 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-const ProductsData = ({digitalToolsData}) => {
+const ProductsData = ({digitalToolsData,selectedCarts, setSelectedCarts}) => {
     return (
         <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
             {
                 digitalToolsData.map(product =>
-                <ProductCard
+                <ProductCard 
+                selectedCarts={selectedCarts}
+                setSelectedCarts={setSelectedCarts}
                 key={product.id}
                  product={product}></ProductCard> )
             }

@@ -1,16 +1,25 @@
 import React from 'react';
 import bannerImg from '../../assets/banner.png';
 import { IoPlayOutline } from "react-icons/io5";
+import badgeImg from '../../assets/assets/products/Group 5.png'
 
 const Hero = () => {
     return (
 
 <div className=" px-4 py-10 md:px-12 md:py-15 flex justify-between items-center flex-col lg:flex-row-reverse gap-15">
-    <img  src={bannerImg} alt="banner image" />
+
+    <img className='shadow-lg'  src={bannerImg} alt="banner image" />
+
     <div>
-      <h1 className=" text-3xl md:text-6xl font-bold">
+
+      <div class="badge badge-soft badge-primary badge-lg rounded-full font-medium mb-4">
+        <img src={badgeImg} alt="" />
+        New: AI-Powered Tools Available
+      </div>
+
+      <h1 className=" text-4xl leading-12 md:leading-20 md:text-6xl font-bold">
       Supercharge Your Digital Workflow
-    </h1>
+     </h1>
       <p className="py-6 lg:w-3/4">
        Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today. Explore Products
       </p>

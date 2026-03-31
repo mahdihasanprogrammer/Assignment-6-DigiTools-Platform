@@ -1,12 +1,26 @@
-import React from 'react';
+
 import { FcCheckmark } from "react-icons/fc";
+import { IoCheckmarkSharp } from "react-icons/io5";
+import { toast } from "react-toastify";
 
 
 
-const ProductCard = ({product}) => {
-console.log(product)
+const ProductCard = ({product,selectedCarts, setSelectedCarts}) => {
 
 const {name,description,price,period,tagType,features,icon} = product;
+
+const click = selectedCarts.some(s => s.id === product.id);
+
+ const handleSelected = ()=>{
+
+    toast.success('Added to cart successfully')
+
+    // updated selectedCarts array value , and set cart section;
+   const updatedSelectedCarts = [...selectedCarts, product];
+   setSelectedCarts(updatedSelectedCarts)
+ }
+ 
+
 
 return (
 
@@ -33,16 +47,27 @@ return (
 
     <ul className="mt-6 flex flex-col gap-2 text-xs flex-1">
         {
-            features.map(feature =>
-                 <li className='flex items-center gap-2 text-sm'>
+            features.map((feature, index) =>
+                 <li key={index}
+                  className='flex items-center gap-2 text-sm'>
                     <span><FcCheckmark className='size-4' /></span> {feature}
                 </li>)
         }
     </ul>
 
     <div className="mt-6">
-      <button className="btn text-base-100 text-base 
-      bg-linear-to-r from-indigo-500 to-purple-500  w-full rounded-full">Buy Now</button>
+      <button
+      onClick={handleSelected}
+       className={`btn text-base-100 text-base 
+        w-full rounded-full
+        ${click ? 'bg-green-600 text-white':
+             'bg-linear-to-r from-indigo-500 to-purple-500' }
+        `}>
+       {click ?
+        <span className='flex items-center gap-2'> 
+        <IoCheckmarkSharp /> Added to cart</span> 
+            : ' Buy Now'}
+    </button>
     </div>
   </div>
 

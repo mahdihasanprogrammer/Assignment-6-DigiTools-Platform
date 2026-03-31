@@ -1,7 +1,10 @@
 import React, { Suspense, use, useState } from 'react';
 import ProductsData from './Products/ProductsData';
+import CartsData from './Carts/CartsData';
 
-const DigitalTools = ({digitalToolsPromise}) => {
+const DigitalTools = ({digitalToolsPromise,
+    selectedCarts,
+     setSelectedCarts}) => {
 
 const [selected , setSelected] = useState('product');
 
@@ -28,25 +31,42 @@ const digitalToolsData = use(digitalToolsPromise);
                     
                 <button 
                     onClick={()=>{setSelected('product')}}
-                    className={`btn ${selected === 'product' && 'bg-linear-to-r from-indigo-500 to-purple-500 text-base-100'} 
+                    className={` ${selected === 'product' && 'btn bg-linear-to-r from-indigo-500 to-purple-500 text-base-100'} 
 
-                    font-semibold rounded-full  border-2 px-6 py-4 text-base`} >
+                    font-semibold rounded-full  border-2 px-6 border-none text-base`} >
                         Products
                  </button>
                 
                 <button
                  onClick={()=>{setSelected('cart')}}
-                  className={`btn ${selected === 'cart' && 'bg-linear-to-r from-indigo-500 to-purple-500 text-base-100'} 
+                  className={` ${selected === 'cart' && 'btn bg-linear-to-r from-indigo-500 to-purple-500 text-base-100'} 
 
-                    font-semibold rounded-full  border-2 px-6 py-4 text-base`}>
-                    Cart (0)
+                    font-semibold rounded-full  border-2 px-6 border-none  text-base`}>
+                    Cart ({selectedCarts.length})
                  </button>
             </div>
 
             
-             <ProductsData
-             digitalToolsData={digitalToolsData} />
-           
+            {
+                selected === 'product' ?
+                <Suspense>
+
+                     <ProductsData
+                     selectedCarts={selectedCarts}
+                     setSelectedCarts={setSelectedCarts}
+                    digitalToolsData={digitalToolsData} />
+
+                </Suspense> :
+
+                <Suspense  
+                 fallback={<span className="loading loading-ball flex py-10 items-center size-15 mx-auto"></span>}>
+
+                     <CartsData 
+                      selectedCarts={selectedCarts}
+                     setSelectedCarts={setSelectedCarts}
+                     />
+                </Suspense>
+            }
 
         </section>
     );
