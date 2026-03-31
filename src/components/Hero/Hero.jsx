@@ -5,7 +5,7 @@ import { IoPlayOutline } from "react-icons/io5";
 const Hero = () => {
     return (
 
-<div className=" p-4 md:px-10 md:py-12 flex justify-between items-center flex-col lg:flex-row-reverse gap-15">
+<div className=" px-4 py-10 md:px-10 md:py-15 flex justify-between items-center flex-col lg:flex-row-reverse gap-15">
     <img  src={bannerImg} alt="banner image" />
     <div>
       <h1 className=" text-3xl md:text-6xl font-bold">

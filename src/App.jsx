@@ -1,6 +1,7 @@
 
 import './App.css'
 import Hero from './components/Hero/Hero'
+import Stats from './components/MainSection/Stats/Stats'
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
@@ -16,7 +17,10 @@ function App() {
 
 
       {/* main section */}
-      <main>
+      <main className='mb-15  md:mb-20'>
+
+          {/* stats section */}
+          <Stats />
 
       </main>
 
