@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero'
 import DigitalTools from './components/MainSection/DigitalToolsSection/DigitalTools'
 import Stats from './components/MainSection/Stats/Stats'
 import Navbar from './components/Navbar/Navbar'
+import Steps from './components/MainSection/StepsSection/Steps'
 
 const digitalToolsPromise =
        fetch('DigitalToolsData.json').then(res => res.json());
@@ -40,6 +41,9 @@ console.log(selectedCarts)
            setSelectedCarts={setSelectedCarts}
             digitalToolsPromise={digitalToolsPromise}/>
          </Suspense>
+
+         {/* steps section */}
+         <Steps />
 
       </main>
 

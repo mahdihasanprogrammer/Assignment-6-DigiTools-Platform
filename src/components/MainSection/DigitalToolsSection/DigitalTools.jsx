@@ -16,7 +16,7 @@ const digitalToolsData = use(digitalToolsPromise);
 
             <div className='text-center space-y-5 mb-6'>
 
-                <h1 className='text-5xl font-extrabold'>
+                <h1 className=' text-3xl md:text-5xl font-extrabold'>
                     Premium Digital Tools
                 </h1>
 
