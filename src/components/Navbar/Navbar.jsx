@@ -17,22 +17,25 @@ const links = navData.map(navItem => {
 
 
 return (
-<nav className="p-4 md:px-10 navbar bg-base-100 shadow-sm">
+<nav className="p-4 md:px-12 navbar bg-base-100 shadow-sm">
             
   <div className="navbar-start">
     <div className="dropdown">
 
-      <div tabIndex={0} role="button" className=" mr-3 lg:hidden">
+      <div tabIndex={0} role="button" className=" mr-3 lg:hidden cursor-pointer">
         <RiMenu2Line className='size-6' />
       </div>
 
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 space-y-2 rounded-box z-1 mt-3  p-5 shadow font-medium">
+        className="menu menu-sm dropdown-content bg-base-100 space-y-2 rounded-box z-1 mt-3 box-content text-base cursor-pointer p-5 shadow font-medium">
             {links}
       </ul>
     </div>
-    <h1 className=' font-extrabold text-xl sm:text-3xl text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6]  to-[#9514FA]'>DigiTools</h1>
+
+    <h1 className=' font-extrabold text-xl sm:text-3xl text-transparent bg-clip-text  bg-linear-to-r from-indigo-500 to-purple-500'>
+      DigiTools</h1>
+
   </div>
 
   <div className="navbar-center hidden lg:flex">
@@ -48,7 +51,8 @@ return (
 
     <button className='font-semibold'>Login</button>
     <button
-     className=' btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-base-100 sm:font-semibold  rounded-full'>
+     className=' btn sm:font-semibold  sm:text-base
+     bg-linear-to-r from-indigo-500 to-purple-500 text-base-100  rounded-full'>
         Get Started</button>
 
   </div>

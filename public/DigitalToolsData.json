@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Advanced AI-powered writing tool for blogs, ads, and professional content creation.",
+    "price": 19,
+    "period": "monthly",
+    "tagType": "popular",
+    "features": [
+      "AI content generation",
+      "Grammar correction",
+      "SEO optimization",
+      "Multi-language support"
+    ],
+    "icon": "https://i.ibb.co.com/LzSmCby9/writing-2327400-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "Collection of high-quality design templates for web, social media, and branding.",
+    "price": 49,
+    "period": "one-time",
+    "tagType": "best seller",
+    "features": [
+      "100+ templates",
+      "Editable files",
+      "Modern UI design",
+      "Figma & PSD support"
+    ],
+    "icon": "https://i.ibb.co.com/x8qQTVZp/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access thousands of premium stock images, videos, and graphics.",
+    "price": 29,
+    "period": "monthly",
+    "tagType": "new",
+    "features": [
+      "HD & 4K assets",
+      "Royalty-free license",
+      "Unlimited downloads",
+      "Weekly updates"
+    ],
+    "icon": "https://i.ibb.co.com/m5PxPjdY/camera.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Powerful automation tools to streamline workflows and increase productivity.",
+    "price": 99,
+    "period": "yearly",
+    "tagType": "popular",
+    "features": [
+      "Task automation",
+      "API integrations",
+      "Workflow builder",
+      "Real-time monitoring"
+    ],
+    "icon": "https://i.ibb.co.com/r23Dvvyt/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with AI suggestions and modern templates.",
+    "price": 15,
+    "period": "monthly",
+    "tagType": "best seller",
+    "features": [
+      "ATS-friendly templates",
+      "AI suggestions",
+      "Export to PDF",
+      "Cover letter builder"
+    ],
+    "icon": "https://i.ibb.co.com/SwPXFxk9/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "All-in-one kit for creating engaging social media posts and campaigns.",
+    "price": 25,
+    "period": "monthly",
+    "tagType": "new",
+    "features": [
+      "Content calendar",
+      "Post templates",
+      "Hashtag generator",
+      "Analytics insights"
+    ],
+    "icon": "https://i.ibb.co.com/V08xhsGc/social-media.png"
+  }
+]
