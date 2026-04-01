@@ -5,7 +5,7 @@ import rocketImg from '../../../assets/rocket.png';
 
 const Steps = () => {
     return (
-      <section className=' px-4 md:px-12 my-15 md:my-20 py-20 bg-gray-100'>
+      <section className=' px-4 md:px-12 my-15 md:my-20 py-10 md:py-20 bg-gray-100'>
 
         {/* section heading */}
         <div className='mb-15 text-center space-y-4'>

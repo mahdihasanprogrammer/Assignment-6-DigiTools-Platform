@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar'
 import Steps from './components/MainSection/StepsSection/Steps'
 import Pricing from './components/MainSection/PricingSection/Pricing'
 import Footer from './components/Footer/Footer'
+import WorkFlow from './components/MainSection/WorkFlow/WorkFlow'
 
 const digitalToolsPromise =
        fetch('DigitalToolsData.json').then(res => res.json());
@@ -28,7 +29,7 @@ console.log(selectedCarts)
 
 
       {/* main section */}
-      <main className='mb-15  md:mb-20'>
+      <main>
 
           {/* stats section */}
           <Stats />
@@ -52,6 +53,10 @@ console.log(selectedCarts)
             fallback={<span className="loading loading-ball flex py-10 items-center size-15 mx-auto"></span>}>
              <Pricing />
           </Suspense>
+
+
+          {/* workflow section */}
+          <WorkFlow />
 
       </main>
 
