@@ -8,7 +8,7 @@ const Hero = () => {
 
 <div className=" px-4 py-10 md:px-12 md:py-15 flex justify-between items-center flex-col lg:flex-row-reverse gap-15">
 
-    <img className='shadow-sm'  src={bannerImg} alt="banner image" />
+    <img className='shadow-md shadow-purple-100 rounded-lg'  src={bannerImg} alt="banner image" />
 
     <div>
 
@@ -18,9 +18,9 @@ const Hero = () => {
       </div>
 
       <h1 className=" text-4xl leading-12 md:leading-20 md:text-6xl font-bold">
-      Supercharge Your Digital Workflow
+      Supercharge Your <span className='bg-linear-to-r from-purple-600 to-indigo-600 text-transparent bg-clip-text'>Digital Workflow</span>
      </h1>
-      <p className="py-6 lg:w-3/4">
+      <p className="py-6 lg:w-3/4 text-gray-800">
        Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today. Explore Products
       </p>
       

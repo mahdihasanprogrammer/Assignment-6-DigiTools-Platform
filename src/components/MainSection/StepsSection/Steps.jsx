@@ -24,10 +24,10 @@ const Steps = () => {
               
                
               <div className='flex justify-end mb-7'>
-                   <h1 className='flex justify-center items-center text-base-100 bg-linear-to-r from-indigo-500 to-purple-500 rounded-full size-8'>01</h1>
+                   <h1 className='flex justify-center items-center text-base-100 bg-linear-to-r from-indigo-600 to-purple-600 rounded-full size-8'>01</h1>
               </div>
                
-                <img className='mx-auto p-4 bg-purple-200 rounded-full' src={userImg} alt="user png" />
+                <img className='mx-auto p-4 bg-purple-100 rounded-full' src={userImg} alt="user png" />
               
                 <h1 className='text-2xl font-bold'>Create Account</h1>
                 <p className='text-[#627382]'>Sign up for free in seconds. No credit card required to get started.</p>
@@ -37,10 +37,10 @@ const Steps = () => {
              <div className='text-center space-y-4 p-6  border-2 border-gray-200 bg-white rounded-xl min-h-96 flex flex-col justify-start'>
               
               <div className='flex justify-end mb-7'>
-                   <h1 className='flex justify-center items-center text-base-100 bg-linear-to-r from-indigo-500 to-purple-500 rounded-full size-8'>02</h1>
+                   <h1 className='flex justify-center items-center text-base-100 bg-linear-to-r from-indigo-600 to-purple-600 rounded-full size-8'>02</h1>
               </div>
                
-                <img className='mx-auto p-4 bg-purple-200 rounded-full' src={packageImg} alt="user png" />
+                <img className='mx-auto p-4 bg-purple-100 rounded-full' src={packageImg} alt="user png" />
               
                 <h1 className='text-2xl font-bold'>Choose Products</h1>
                 <p className='text-[#627382]'>Browse our catalog and select the tools that fit your needs.</p>
@@ -51,10 +51,10 @@ const Steps = () => {
             <div className='md:col-span-2 lg:col-span-1 text-center space-y-4 p-6  border-2 border-gray-200 bg-white rounded-xl min-h-96 flex flex-col justify-start'>
               
               <div className='flex justify-end mb-7'>
-                   <h1 className='flex justify-center items-center text-base-100 bg-linear-to-r from-indigo-500 to-purple-500 rounded-full size-8'>03</h1>
+                   <h1 className='flex justify-center items-center text-base-100 bg-linear-to-r from-indigo-600 to-purple-600 rounded-full size-8'>03</h1>
               </div>
                
-                <img className='mx-auto p-4 bg-purple-200 rounded-full' src={rocketImg} alt="user png" />
+                <img className='mx-auto p-4 bg-purple-100 rounded-full' src={rocketImg} alt="user png" />
               
                 <h1 className='text-2xl font-bold'>Start Creating</h1>
                 <p className='text-[#627382]'>Download and start using your premium tools immediately.</p>

@@ -45,7 +45,7 @@ const deleteAllCartFromCartTab = ()=>{
                     <div className='space-y-5'>
                         <h1 
                         className='flex justify-between items-center text-xl font-semibold px-5'>
-                            Total Price: <span className='text-2xl'>
+                            Total Price: <span className='text-2xl bg-linear-to-r from-purple-600 to-indigo-600 text-transparent bg-clip-text'>
                                 ${totalPrice}</span>
                         </h1>
 
