@@ -1,11 +1,12 @@
 import React from 'react';
 import userImg from '../../../assets/user.png';
 import packageImg from '../../../assets/package.png';
-import rocketImg from '../../../assets/rocket.png';
+import rocketImg from  '../../../assets/rocket-icon.png';
 
 const Steps = () => {
     return (
     <section className='bg-gray-100'>
+
       <div className='container mx-auto px-4 md:px-12 my-15 md:my-20 py-10 md:py-20 '>
 
         {/* section heading */}
@@ -28,7 +29,7 @@ const Steps = () => {
                    <h1 className='flex justify-center items-center text-base-100 bg-linear-to-r from-indigo-600 to-purple-600 rounded-full size-8'>01</h1>
               </div>
                
-                <img className='mx-auto p-4 bg-purple-100 rounded-full' src={userImg} alt="user png" />
+                <img className='mx-auto p-5 bg-purple-100 rounded-full' src={userImg} alt="user png" />
               
                 <h1 className='text-2xl font-bold'>Create Account</h1>
                 <p className='text-[#627382]'>Sign up for free in seconds. No credit card required to get started.</p>
@@ -41,7 +42,7 @@ const Steps = () => {
                    <h1 className='flex justify-center items-center text-base-100 bg-linear-to-r from-indigo-600 to-purple-600 rounded-full size-8'>02</h1>
               </div>
                
-                <img className='mx-auto p-4 bg-purple-100 rounded-full' src={packageImg} alt="user png" />
+                <img className='mx-auto p-5 bg-purple-100 rounded-full' src={packageImg} alt="choose product png" />
               
                 <h1 className='text-2xl font-bold'>Choose Products</h1>
                 <p className='text-[#627382]'>Browse our catalog and select the tools that fit your needs.</p>
@@ -55,7 +56,9 @@ const Steps = () => {
                    <h1 className='flex justify-center items-center text-base-100 bg-linear-to-r from-indigo-600 to-purple-600 rounded-full size-8'>03</h1>
               </div>
                
-                <img className='mx-auto p-4 bg-purple-100 rounded-full' src={rocketImg} alt="user png" />
+                <div className=' bg-purple-100 mx-auto rounded-full'>
+                  <img className='p-5' src={rocketImg} alt="rocket png" />
+                </div>
               
                 <h1 className='text-2xl font-bold'>Start Creating</h1>
                 <p className='text-[#627382]'>Download and start using your premium tools immediately.</p>
