@@ -8,7 +8,7 @@ const Hero = () => {
 
 <div className=" px-4 py-10 md:px-12 md:py-15 flex justify-between items-center flex-col lg:flex-row-reverse gap-15">
 
-    <img className='shadow-lg'  src={bannerImg} alt="banner image" />
+    <img className='shadow-sm'  src={bannerImg} alt="banner image" />
 
     <div>
 

@@ -24,7 +24,9 @@ const click = selectedCarts.some(s => s.id === product.id);
 
 return (
 
-<div className="card bg-base-100 shadow-sm hover:-translate-y-2 transition-all duration-500">
+<div className={`card bg-base-100 shadow-md
+   hover:-translate-y-2 transition-all duration-500
+   ${product.id===9 && 'md:col-span-2 lg:col-span-1'}`}>
 
   <div className="card-body">
 

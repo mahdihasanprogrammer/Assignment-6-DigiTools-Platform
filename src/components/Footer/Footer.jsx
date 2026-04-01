@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-<footer className='px-4 md:px-12  bg-[#101727] text-white md:pt-20 pt-15'>
+<footer className='px-8 md:px-12  bg-[#101727] text-white md:pt-20 pt-15'>
 
    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 mb-20 gap-8 text-gray-300">
 
@@ -48,9 +48,9 @@ const Footer = () => {
     </nav>
   </div>
 
-  <div className='py-7 border-t border-t-gray-600 flex flex-col md:flex-row md:justify-between items-center gap-2 tracking-wider text-gray-400'>
+  <div className='py-7 border-t border-t-gray-600 flex flex-col md:flex-row md:justify-between items-center gap-2 tracking-wider text-gray-400 text-sm sm:text-base'>
     <p>© MAHDI HASAN. All rights reserved. </p>
-    <ul className='flex items-center gap-6'>
+    <ul className='flex gap-3 justify-center flex-wrap'>
         <li>Privacy Policy</li>
         <li>Term of Service</li>
         <li>Cookies</li>

@@ -88,5 +88,50 @@
       "Analytics insights"
     ],
     "icon": "https://i.ibb.co.com/V08xhsGc/social-media.png"
+  },
+   {
+    "id": 7,
+    "name": "Email Marketing Suite",
+    "description": "Powerful tools to create, send, and track email campaigns.",
+    "price": 35,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Email templates",
+      "Automation workflows",
+      "Analytics dashboard"
+    ],
+    "icon": "https://i.ibb.co.com/RGP88f2k/email-marketing.png"
+  },
+  {
+    "id": 8,
+    "name": "Website Builder Pro",
+    "description": "Drag-and-drop website builder with modern templates.",
+    "price": 59,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "No-code builder",
+      "Responsive templates",
+      "SEO tools"
+    ],
+    "icon": "https://i.ibb.co.com/yBWw3cvj/websitebuilder-1.png"
+  },
+  {
+    "id": 9,
+    "name": "Analytics Dashboard Pro",
+    "description": "Track and visualize your business data with advanced analytics.",
+    "price": 45,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Real-time data",
+      "Custom reports",
+      "Data visualization"
+    ],
+    "icon": "https://i.ibb.co.com/wZHMYXwT/analytics-dashboard-icon.png"
   }
 ]
