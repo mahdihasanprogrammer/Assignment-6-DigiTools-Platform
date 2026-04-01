@@ -7,6 +7,7 @@ import Stats from './components/MainSection/Stats/Stats'
 import Navbar from './components/Navbar/Navbar'
 import Steps from './components/MainSection/StepsSection/Steps'
 import Pricing from './components/MainSection/PricingSection/Pricing'
+import Footer from './components/Footer/Footer'
 
 const digitalToolsPromise =
        fetch('DigitalToolsData.json').then(res => res.json());
@@ -55,9 +56,7 @@ console.log(selectedCarts)
       </main>
 
       {/* footer section */}
-      <footer>
-
-      </footer>
+      <Footer />
     </>
   )
 }
