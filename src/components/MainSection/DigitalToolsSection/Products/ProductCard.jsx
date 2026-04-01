@@ -61,7 +61,7 @@ return (
        className={`btn text-base-100 text-base 
         w-full rounded-full
         ${click ? 'bg-green-600 text-white':
-             'bg-linear-to-r from-indigo-500 to-purple-500' }
+             'bg-linear-to-r from-indigo-600 to-purple-600' }
         `}>
        {click ?
         <span className='flex items-center gap-2'> 

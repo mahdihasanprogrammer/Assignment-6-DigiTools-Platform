@@ -31,7 +31,7 @@ const digitalToolsData = use(digitalToolsPromise);
                     
                 <button 
                     onClick={()=>{setSelected('product')}}
-                    className={` ${selected === 'product' && 'btn bg-linear-to-r from-indigo-500 to-purple-500 text-base-100'} 
+                    className={` ${selected === 'product' && 'btn bg-linear-to-r from-indigo-600 to-purple-600 text-base-100'} 
 
                     font-semibold rounded-full  border-2 px-6 border-none text-base`} >
                         Products
@@ -39,7 +39,7 @@ const digitalToolsData = use(digitalToolsPromise);
                 
                 <button
                  onClick={()=>{setSelected('cart')}}
-                  className={` ${selected === 'cart' && 'btn bg-linear-to-r from-indigo-500 to-purple-500 text-base-100'} 
+                  className={` ${selected === 'cart' && 'btn bg-linear-to-r from-indigo-600 to-purple-600 text-base-100'} 
 
                     font-semibold rounded-full  border-2 px-6 border-none  text-base`}>
                     Cart ({selectedCarts.length})

@@ -6,6 +6,7 @@ import DigitalTools from './components/MainSection/DigitalToolsSection/DigitalTo
 import Stats from './components/MainSection/Stats/Stats'
 import Navbar from './components/Navbar/Navbar'
 import Steps from './components/MainSection/StepsSection/Steps'
+import Pricing from './components/MainSection/PricingSection/Pricing'
 
 const digitalToolsPromise =
        fetch('DigitalToolsData.json').then(res => res.json());
@@ -44,6 +45,12 @@ console.log(selectedCarts)
 
          {/* steps section */}
          <Steps />
+
+         {/* Pricing section */}
+          <Suspense 
+            fallback={<span className="loading loading-ball flex py-10 items-center size-15 mx-auto"></span>}>
+             <Pricing />
+          </Suspense>
 
       </main>
 

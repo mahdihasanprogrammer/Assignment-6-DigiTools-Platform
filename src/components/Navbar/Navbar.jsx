@@ -33,7 +33,7 @@ return (
       </ul>
     </div>
 
-    <h1 className=' font-extrabold text-xl sm:text-3xl text-transparent bg-clip-text  bg-linear-to-r from-indigo-500 to-purple-500'>
+    <h1 className=' font-extrabold text-xl sm:text-3xl text-transparent bg-clip-text  bg-linear-to-r from-indigo-600 to-purple-600'>
       DigiTools</h1>
 
   </div>
@@ -63,7 +63,7 @@ return (
     <button className='font-semibold'>Login</button>
     <button
      className=' btn sm:font-semibold  sm:text-base
-     bg-linear-to-r from-indigo-500 to-purple-500 text-base-100  rounded-full'>
+     bg-linear-to-r from-indigo-600 to-purple-600 text-base-100  rounded-full'>
         Get Started</button>
 
   </div>

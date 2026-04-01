@@ -23,17 +23,18 @@ const Hero = () => {
       <p className="py-6 lg:w-3/4">
        Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today. Explore Products
       </p>
+      
         <div className='flex items-center flex-wrap gap-3'>
             <button
                  className='btn text-base box-content text-base-100
-                  bg-linear-to-r from-indigo-500 to-purple-500
+                  bg-linear-to-r from-indigo-600 to-purple-600
                    font-semibold rounded-full transition-all duration-1000
                    hover:text-transparent hover:bg-clip-text border-2 hover:border-[#9514FA] '>
                  Explore Products
             </button>
 
             <button className="btn text-base box-content font-semibold rounded-full bg-transparent  text-[#9514FA] 
-            hover:bg-linear-to-r from-indigo-500 to-purple-500
+            hover:bg-linear-to-r from-indigo-600 to-purple-600
              border-2  border-[#9514FA] transition-all duration-1000
             hover:text-base-100
             ">
