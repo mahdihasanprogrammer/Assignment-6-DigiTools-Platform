@@ -5,7 +5,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-<footer className='px-8 md:px-12  bg-[#101727] text-white md:pt-20 pt-15'>
+<div className=' bg-[#101727]  text-white'>
+  <footer className='container mx-auto px-8 md:px-12 md:pt-20 pt-15'>
 
    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 mb-20 gap-8 text-gray-300">
 
@@ -55,8 +56,9 @@ const Footer = () => {
         <li>Term of Service</li>
         <li>Cookies</li>
     </ul>
-  </div>
-</footer>
+   </div>
+  </footer>
+</div>
     );
 };
 

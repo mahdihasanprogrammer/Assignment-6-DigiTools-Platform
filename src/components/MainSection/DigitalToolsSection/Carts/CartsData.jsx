@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import SingleCart from './SingleCart';
 import cartIcon from '../../../../assets/assets/products/shopping-cart.png'
 import { toast } from 'react-toastify';
@@ -6,13 +6,14 @@ import { toast } from 'react-toastify';
 
 const CartsData = ({selectedCarts,setSelectedCarts}) => {
 
-const [totalPrice, setTotalPrice] = useState(0);
 
+const totalCartPrice =  selectedCarts.reduce((sum, selectedItem)=> sum + selectedItem.price,0);
 
+// setTotalPrice(totalCartPrice);
 // delete all product from cart tab when clicked proceed to checkout btn;
 const deleteAllCartFromCartTab = ()=>{
-    setSelectedCarts([])
     toast.warning('deleted all products from  cart');
+    setSelectedCarts([])
 }
 
 
@@ -27,7 +28,6 @@ const deleteAllCartFromCartTab = ()=>{
                 selectedCarts.map(cart =>
                     <SingleCart
                     setSelectedCarts={setSelectedCarts}
-                    setTotalPrice={setTotalPrice}
                      selectedCarts={selectedCarts}
                      key={cart.id} cart={cart} />)
 
@@ -46,7 +46,7 @@ const deleteAllCartFromCartTab = ()=>{
                         <h1 
                         className='flex justify-between items-center text-xl font-semibold px-5'>
                             Total Price: <span className='text-2xl bg-linear-to-r from-purple-600 to-indigo-600 text-transparent bg-clip-text'>
-                                ${totalPrice}</span>
+                                ${totalCartPrice}</span>
                         </h1>
 
 

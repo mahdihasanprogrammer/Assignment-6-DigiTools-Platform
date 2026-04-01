@@ -2,21 +2,19 @@ import React from 'react';
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { toast } from 'react-toastify';
 
-const SingleCart = ({cart,selectedCarts, setSelectedCarts, setTotalPrice}) => {
+const SingleCart = ({cart,selectedCarts, setSelectedCarts}) => {
 
 
+
+ 
 // click the delete button, and delete cart form cart tab;
 const handleDeleteCartFromCartTab =(cart)=>{
     const filteredCart = selectedCarts.filter(filterCart => filterCart.id !== cart.id);
     toast.warning('deleted product from cart ')
    setSelectedCarts(filteredCart)
 }
+ 
 
-// set total price of tab carts
-const totalCartPrice =  selectedCarts.reduce((sum, selectedItem)=> sum + selectedItem.price,0);
-
-// updated totalPrice state;
-setTotalPrice(totalCartPrice);
 
     return (
         <div className='p-4 rounded-lg bg-gray-100 flex justify-between items-center'>

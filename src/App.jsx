@@ -16,13 +16,14 @@ const digitalToolsPromise =
 function App() {
 
 const [selectedCarts, setSelectedCarts] =useState([]);
-console.log(selectedCarts)
+
+
  
 
   return (
     <>
     {/* header  */}
-      <header>
+      <header className='container mx-auto'>
         <Navbar selectedCarts={selectedCarts}/>
         <Hero />
       </header>
@@ -36,14 +37,13 @@ console.log(selectedCarts)
 
 
           {/* digitalTool section */}
-         <Suspense
-          fallback={<span className="loading loading-ball flex py-10 items-center size-15 mx-auto"></span>}>
-
+         <Suspense fallback={<p>Loading...</p>}>
+         
            <DigitalTools
            selectedCarts={selectedCarts}
            setSelectedCarts={setSelectedCarts}
             digitalToolsPromise={digitalToolsPromise}/>
-         </Suspense>
+         </Suspense> 
 
          {/* steps section */}
          <Steps />

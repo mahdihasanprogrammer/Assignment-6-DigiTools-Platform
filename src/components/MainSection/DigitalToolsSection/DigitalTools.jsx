@@ -12,7 +12,7 @@ const digitalToolsData = use(digitalToolsPromise);
 
 
     return (
-        <section className='px-4 md:px-12 md:mt-15 mb-15 md:mb-20'>
+        <section className='container mx-auto px-4 md:px-12 md:mt-15 mb-15 md:mb-20'>
 
             <div className='text-center space-y-5 mb-6'>
 
@@ -49,7 +49,10 @@ const digitalToolsData = use(digitalToolsPromise);
             
             {
                 selected === 'product' ?
-                <Suspense>
+                <Suspense 
+                fallback={<span className="loading loading-bars loading-xl
+               flex py-10 items-center mx-auto ">
+                </span>}>
 
                      <ProductsData
                      selectedCarts={selectedCarts}
@@ -59,7 +62,7 @@ const digitalToolsData = use(digitalToolsPromise);
                 </Suspense> :
 
                 <Suspense  
-                 fallback={<span className="loading loading-ball flex py-10 items-center size-15 mx-auto"></span>}>
+                 fallback={<span className="loading loading-bars flex py-10 items-center mx-auto"></span>}>
 
                      <CartsData 
                       selectedCarts={selectedCarts}

@@ -7,6 +7,7 @@ const ProductsData = ({digitalToolsData,selectedCarts, setSelectedCarts}) => {
             {
                 digitalToolsData.map(product =>
                 <ProductCard 
+           
                 selectedCarts={selectedCarts}
                 setSelectedCarts={setSelectedCarts}
                 key={product.id}

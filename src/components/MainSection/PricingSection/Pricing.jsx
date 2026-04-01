@@ -8,12 +8,10 @@ const pricingPromise = fetch('PricingData.json').then(res => res.json());
 const Pricing = () => {
 
 const pricingData = use(pricingPromise);
-console.log(pricingData)
-
 
 
     return (
-    <section className='px-4 md:px-12 my-15 md:my-20 '>
+    <section className='px-4 md:px-12 my-15 md:my-20 container mx-auto'>
 
                {/* section heading */}
         <div className='mb-15 text-center space-y-4'>

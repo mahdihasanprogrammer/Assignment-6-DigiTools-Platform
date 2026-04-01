@@ -11,13 +11,25 @@ const {name,description,price,period,tagType,features,icon} = product;
 
 const click = selectedCarts.some(s => s.id === product.id);
 
+ // set total price of tab carts
+
+
  const handleSelected = ()=>{
 
-    toast.success('Added to cart successfully')
+    if(click){
+     toast.error(`${product.name} card already added in cart`)
+      return;
+    }
+    else{
+       toast.success('Added to cart successfully');
+       // updated totalPrice state;
+      
+    }
 
     // updated selectedCarts array value , and set cart section;
    const updatedSelectedCarts = [...selectedCarts, product];
-   setSelectedCarts(updatedSelectedCarts)
+   setSelectedCarts(updatedSelectedCarts);
+  
  }
  
 

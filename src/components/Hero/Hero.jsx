@@ -12,7 +12,7 @@ const Hero = () => {
 
     <div>
 
-      <div class="badge badge-soft badge-primary badge-lg rounded-full font-medium mb-4">
+      <div className="badge badge-soft badge-primary badge-lg rounded-full font-medium mb-4">
         <img src={badgeImg} alt="" />
         New: AI-Powered Tools Available
       </div>
